@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 200px;
+  display: flex;
+  /* border: 2px solid black; */
+  width: 100%;
+}
+p {
+  font-size: 50px;
+  font-weight: bold;
+  /* margin-left: 250px; */
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  line-height: 100px;
+}
+div {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.minus,
+.plus,
+.reset {
+  /* margin: 0 150px; */
+  width: 150px;
+  /* height: 50px; */
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
+}
+.minus .plus {
+  height: 50px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reset {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.add-counter {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.add-counter:hover {
+  cursor: pointer;
+}
+.hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .hidden-when-small {
+    visibility: hidden;
+  }
+}
