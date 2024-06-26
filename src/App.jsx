@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Main from "./components/Main";
 
 function App() {
-  const [tab, setTab] = useState([<Main />]);
-
+  const [tab, setTab] = useState([]);
+  const limit = 2;
   return (
     <>
       <header>
@@ -19,9 +19,11 @@ function App() {
       <button
         className="add-counter"
         onClick={() => {
-          const newTab = [...tab];
-          newTab.push(tab);
-          setTab(newTab);
+          if (tab.length < limit) {
+            const newTab = [...tab];
+            newTab.push(<Main />);
+            setTab(newTab);
+          }
         }}
       >
         Add counter
